@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tic-Tac-Toe</title>
+        <link rel="stylesheet" href="./index.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main">
+            <div class="winner">
+            </div>
+            <div class="container game">
+                <div class="turns game">X's turn</div>
+                <div class="column1">
+                    <div class="row1" onclick="coordinates(0,0)"></div>
+                    <div class="row2" onclick="coordinates(1,0)"></div>
+                    <div class="row3" onclick="coordinates(2,0)"></div>
+                </div>
+                <div class="column2">
+                    <div class="row1" onclick="coordinates(0,1)"></div>
+                    <div class="row2" onclick="coordinates(1,1)"></div>
+                    <div class="row3" onclick="coordinates(2,1)"></div>
+                </div>
+                <div class="column3">
+                    <div class="row1" onclick="coordinates(0,2)"></div>
+                    <div class="row2" onclick="coordinates(1,2)"></div>
+                    <div class="row3" onclick="coordinates(2,2)"></div>
+                </div>
+                <button class="resetbutton" onclick="resetgame()">reset game</button>
+            </div>
+        </div>
+        <script src="./game.js"></script>
+    </body>
+</html>
